@@ -38,7 +38,7 @@ def add_squares(dataframe, categorical_features):
     """
     for feature in dataframe.keys():
         if feature not in categorical_features:
-            dataframe[feature + "_squared"] = dataframe[feature].apply(lambda x: x*x)
+            dataframe[feature + "_squared"] = dataframe[feature].apply(lambda x: x * x)
     return dataframe
 
 
@@ -78,6 +78,37 @@ def add_products_squares(dataframe, categorical_features):
     for feature_pair in itertools.combinations_with_replacement(real_features, 2):  # all unordered pairs of
         # real features, with repeats (i.e. squares are allowed)
         dataframe[new_feature_naming(feature_pair)] = dataframe[feature_pair[0]] * dataframe[feature_pair[1]]
+
+    return dataframe
+
+
+def drop_outliers(dataframe, nb_stdevs):
+    """
+    For the given dataframe, drops all data points where at least one of the real-valued features is at least
+    nb_stdev standard deviations away from the mean. Repeats the process until no such datapoint remains (as
+    the stdev and mean change with every iteration).
+
+    :param dataframe: PANDAS dataframe to be cleaned
+    :param nb_stdevs: Number of standard deviations away from mean, past which points are removed
+    :return: A reference to the cleared dataframe
+    """
+
+    iteration_flag = True
+    while iteration_flag:
+        iteration_flag = False
+        for feature in dataframe.keys():
+            mean = np.mean(dataframe[feature])
+            stdev = np.std(dataframe[feature])
+
+            # finding out row indices of points to be dropped
+            to_drop = dataframe[(mean - (stdev * nb_stdevs) > dataframe[feature]) |
+                                (dataframe[feature] > mean + (stdev * nb_stdevs))].index
+
+            if not to_drop.empty:
+                iteration_flag = True  # if there are elements to be dropped
+
+            # dropping all points outside of the correct range
+            dataframe.drop(to_drop, inplace=True)
 
     return dataframe
 

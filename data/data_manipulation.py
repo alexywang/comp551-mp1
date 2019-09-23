@@ -131,4 +131,3 @@ def display_stats(dataframe, categorical_features):
             print(feature + ":")
             print(collections.Counter(values))
             print("")
-

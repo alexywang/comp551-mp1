@@ -110,8 +110,7 @@ def predict(data, weights, binary_feature="quality_bin"):
 
     predictive_info = data.drop(binary_feature, axis="columns")
     decision_select = lambda x: 1 if x >= 0 else 0
-    return np.array([decision_select(x) for x in np.dot(predictive_info, weights.transpose())]).transpose()
-
+    return np.array([ decision_select(x) for x in np.dot(predictive_info, weights.transpose())]).transpose()
 
 def predict_with_prob(data, weights, binary_feature="quality_bin"):
     """
@@ -127,7 +126,6 @@ def predict_with_prob(data, weights, binary_feature="quality_bin"):
 
     predictive_info = data.drop(binary_feature, axis="columns")
     return np.dot(predictive_info, weights.transpose())
-
 
 # A final wrapper function to be fed to k-fold validation. Returns the prediction accuracy on the validation set
 def train_and_predict(training_data, validation_data, binary_feature='quality_bin'):
@@ -149,8 +147,3 @@ def train_and_predict(training_data, validation_data, binary_feature='quality_bi
 
     accuracy = correct_count/len(real_results)
     return accuracy
-
-
-
-
-

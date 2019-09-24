@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def get_data(path="winequality-red.csv"):
     """
         Reads data from winequality-red.csv and applies treatment to the "quality" feature
@@ -15,3 +16,4 @@ def get_data(path="winequality-red.csv"):
 
     treated_data = treated_data.drop(columns='quality') # drops the original quality column
     return treated_data
+

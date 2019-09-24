@@ -129,24 +129,4 @@ def predict_with_prob(data, weights, binary_feature="quality_bin"):
     return np.dot(predictive_info, weights.transpose())
 
 
-# A final wrapper function to be fed to k-fold validation. Returns the prediction accuracy on the validation set
-def train_and_predict(training_data, validation_data, binary_feature='quality_bin'):
-    training_results = fit(training_data)  # (weights, fitness)
-    weights = training_results[0]
-    fitness = training_results[1]
-
-    # Generate predictions for all validation data points
-    prediction_vector = predict(validation_data, weights, binary_feature)
-    prediction_results = list(np.reshape(prediction_vector, len(prediction_vector))) # TODO: Fix hacky list stuff
-
-    # Compare predictions for real results
-    real_results = list(validation_data[binary_feature])
-
-    correct_count = 0
-    for i in range(0, len(prediction_results)):
-        if prediction_results[i] == real_results[i]:
-            correct_count += 1
-
-    accuracy = correct_count/len(real_results)
-    return accuracy
 

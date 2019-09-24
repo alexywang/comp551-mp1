@@ -17,15 +17,15 @@ def partition(dataframe, k):
 def kfold_validate(dataframe, k, train_and_predict, binary_feature):
     partitions = partition(dataframe, k)
 
-    # Hold out each set for training once and average resulting weights
+    # Hold out each set for training once
     accuracies = []
-    iteration = 0
     for i in range(0, len(partitions)):
         holdout = partitions[i]
-        training_data = pd.DataFrame(columns=partitions[0].columns)
+        training_data = pd.DataFrame(partitions[0])[0:0]
         for j in range(0, len(partitions)):
             if j != i:
-                training_data.append(partitions[j])
+                training_data = training_data.append(partitions[j], ignore_index=True)
+        print(training_data)
         accuracies.append(train_and_predict(training_data, holdout, binary_feature))
 
     # Average out and return the accuracies for the given features
@@ -46,26 +46,27 @@ def filter_features(dataset, binary_feature, included_features):
 def get_best_features(dataset, binary_feature, accuracy_function, max_failures = 50):
     features = list(dataset.columns)
     features.remove(binary_feature)
+    features.remove('bias')
     best_accuracy = 0
     best_features = []
-    included_features = [binary_feature]
+    included_features = [binary_feature, 'bias']
     failure_count = 0
 
-    # Repeatedly expand until there is a continuous decrease in accuracy
-    while len(included_features) <= len(features):
-        print(f'Expanding to {len(included_features)+1} features. Best Accuracy: {best_accuracy}. Failure Count: {failure_count}')
+    # Repeatedly expand until there is a continuous decrease in accuracy or if we run out of features
+    while len(features) != 0 and failure_count < max_failures:
+        print(f'Expanding to {len(included_features)+1} features. Best Accuracy: {best_accuracy}. Failure Count: {failure_count} Features Remaining: {len(features)}')
         # Evaluate expansion on all features and choose the best one
         curr_best_acc = 0
         curr_best_feature = None
 
         for x in features:
             # Find x with greatest accuracy when included
-            print(included_features + [x])
             filtered_dataset = filter_features(dataset, binary_feature, included_features + [x])
             x_acc = kfold_validate(filtered_dataset, 5, accuracy_function, binary_feature)
             if x_acc > curr_best_acc:
                 curr_best_acc = x_acc
                 curr_best_feature = x
+            print(included_features + [x], f'Accuracy: {x_acc}')
 
         included_features.append(curr_best_feature)  # Include the best feature for this expansion level
         features.remove(curr_best_feature)
@@ -77,8 +78,6 @@ def get_best_features(dataset, binary_feature, accuracy_function, max_failures =
         else:
             # If it didn't, then don't update the bests, mark as a failure and continue
             failure_count += 1
-            if failure_count >= max_failures:
-                break
 
     # Either all features have been tried or we consecutive failures exceeded the max
     return best_accuracy, best_features

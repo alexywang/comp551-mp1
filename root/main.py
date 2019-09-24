@@ -1,19 +1,21 @@
 import numpy as np
+import pandas as pd
 from data.wine import wine_import as importer
-from data import data_manipulation as cleaner
+from data import data_manipulation as manip
 from models import gradient_descent as model
-from validation import feature_selection as features
+from validation import feature_selection as validation
 
 BIN_FEATURE = 'quality_bin'
+
 
 # perform all data manipulation and feature engineering
 def process_data(dataframe, categorical_data="quality_bin"):
     step = 0
-    processed = cleaner.normalize(dataframe, categorical_data)
-    processed = cleaner.add_bias(processed)
-    # processed = add_squares(processed, categorical_data)
-    # processed = add_products(processed, categorical_data)
-    # processed = add_products_squares(processed, categorical_data)
+    processed = manip.normalize(dataframe, categorical_data)
+    processed = manip.add_bias(processed)
+    # processed = manip.add_squares(processed, categorical_data)
+    # processed = manip.add_products(processed, categorical_data)
+    # processed = manip.add_products_squares(processed, categorical_data)
     # processed = drop_outliers(processed, 10)
     return processed
 
@@ -45,5 +47,4 @@ dataset = process_data(raw_data, BIN_FEATURE)
 print('starting validation...')
 
 gradient = train_and_predict
-
-best_model = features.get_best_features(dataset, BIN_FEATURE, gradient)
+acc = validation.kfold_validate(dataset, 5, gradient, BIN_FEATURE)

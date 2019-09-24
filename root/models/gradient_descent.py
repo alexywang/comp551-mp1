@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-LEARNING_RATE = 0.00005
+LEARNING_RATE = 0.0005
 TOLERANCE = 0.00001
 
 
@@ -45,7 +45,7 @@ def _gradient_ascent(data, fitness_gradient, learning_rate, tolerance, binary_fe
     return weights
 
 
-def fit(training_data, opt_print = False):
+def fit(training_data, opt_print=False):
     """
     A wrapper for the gradient ascent function.
 

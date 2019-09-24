@@ -1,13 +1,13 @@
 import pandas as pd
 
-def get_data():
+def get_data(path="winequality-red.csv"):
     """
         Reads data from winequality-red.csv and applies treatment to the "quality" feature
         in order to turn it into a binary category.
 
         The "quality" feature is thus renamed "quality_bin"
     """
-    raw_data = pd.read_csv("winequality-red.csv", sep=";")
+    raw_data = pd.read_csv(path, sep=";")
     treated_data = raw_data
 
     # Applying categorical classification to the quality of wines (assignment requirement)

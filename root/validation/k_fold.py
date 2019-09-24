@@ -2,25 +2,14 @@ import pandas as pd
 import numpy as numpy
 
 
-# Temp import code for testing...
-def get_data():
-    """
-        reads data from breast cancer data document. Adds data to treated_data, finds the last column which
-        indicates Malignant or Benign and drops it.
-    """
-    raw_data = pd.read_csv("../data/cancer/breast-cancer-wisconsin.data", sep=",")
-    treated_data = raw_data[raw_data.columns[:-1]]
-    return treated_data
-
-
 # partition a dataframe into k parts
 def partition(dataframe, k):
     partition_size = len(dataframe) // k
     partitions = []
     for i in range(0, k - 1):
-        partitions.append(dataframe[i * partition_size: (i + 1) * partition_size])
+        partitions.append(dataframe.iloc[i * partition_size: (i + 1) * partition_size])
 
-    partitions.append(dataframe[k - 1 * partition_size:])
+    partitions.append(dataframe.iloc[k - 1 * partition_size:])
     return partitions
 
 
@@ -30,13 +19,19 @@ def kfold_validate(dataframe, k, train_and_predict, binary_feature):
 
     # Hold out each set for training once and average resulting weights
     accuracies = []
-    for holdout in partitions:
-        training_data = [x for x in partitions if x != holdout]
-        # TODO: train model on training set, then check accuracy with holdout
+    iteration = 0
+    for i in range(0, len(partitions)):
+        holdout = partitions[i]
+        training_data = pd.DataFrame(columns=partitions[0].columns)
+        for j in range(0, len(partitions)):
+            if j != i:
+                training_data.append(partitions[j])
         accuracies.append(train_and_predict(training_data, holdout, binary_feature))
 
     # Average out and return the accuracies for the given features
     return sum(accuracies)/len(accuracies)
+
+
 
 
 

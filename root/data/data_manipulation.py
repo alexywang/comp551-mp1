@@ -131,3 +131,20 @@ def display_stats(dataframe, categorical_features):
             print(feature + ":")
             print(collections.Counter(values))
             print("")
+
+
+def process_data(dataframe, categorical_data="quality_bin"):
+    step = 0
+    processed = normalize(dataframe, categorical_data)
+    print(1)
+    processed = add_bias(processed)
+    print(2)
+    # processed = add_squares(processed, categorical_data)
+    print(3)
+    # processed = add_products(processed, categorical_data)
+    print(4)
+    # processed = add_products_squares(processed, categorical_data)
+    print(5)
+    # processed = drop_outliers(processed, 10)
+    print(6)
+    return processed

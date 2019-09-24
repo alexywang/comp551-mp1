@@ -112,6 +112,7 @@ def predict(data, weights, binary_feature="quality_bin"):
     decision_select = lambda x: 1 if x >= 0 else 0
     return np.array([ decision_select(x) for x in np.dot(predictive_info, weights.transpose())]).transpose()
 
+
 def predict_with_prob(data, weights, binary_feature="quality_bin"):
     """
     Returns the log-probability on the feature binary_feature for all of the data points contained
@@ -127,6 +128,7 @@ def predict_with_prob(data, weights, binary_feature="quality_bin"):
     predictive_info = data.drop(binary_feature, axis="columns")
     return np.dot(predictive_info, weights.transpose())
 
+
 # A final wrapper function to be fed to k-fold validation. Returns the prediction accuracy on the validation set
 def train_and_predict(training_data, validation_data, binary_feature='quality_bin'):
     training_results = fit(training_data)  # (weights, fitness)
@@ -135,15 +137,16 @@ def train_and_predict(training_data, validation_data, binary_feature='quality_bi
 
     # Generate predictions for all validation data points
     prediction_vector = predict(validation_data, weights, binary_feature)
-    prediction_results = np.reshape(prediction_vector, len(prediction_vector))
+    prediction_results = list(np.reshape(prediction_vector, len(prediction_vector))) # TODO: Fix hacky list stuff
 
     # Compare predictions for real results
-    real_results = validation_data[binary_feature].values[0]
+    real_results = list(validation_data[binary_feature])
 
     correct_count = 0
-    for i in range(0,len(prediction_results)):
+    for i in range(0, len(prediction_results)):
         if prediction_results[i] == real_results[i]:
-            ++correct_count
+            correct_count += 1
 
     accuracy = correct_count/len(real_results)
     return accuracy
+

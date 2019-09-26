@@ -1,5 +1,5 @@
 import pandas as pd
-
+import matplotlib.pyplot as plt
 
 def get_data(path="winequality-red.csv"):
     """
@@ -9,6 +9,7 @@ def get_data(path="winequality-red.csv"):
         The "quality" feature is thus renamed "quality_bin"
     """
     raw_data = pd.read_csv(path, sep=";")
+
     treated_data = raw_data
 
     # Applying categorical classification to the quality of wines (assignment requirement)
@@ -16,4 +17,6 @@ def get_data(path="winequality-red.csv"):
 
     treated_data = treated_data.drop(columns='quality') # drops the original quality column
     return treated_data
+
+get_data()
 

@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import matplotlib as plot
+import jupyter as jp
 from data.wine import wine_import as importer
 from data import data_manipulation as manip
 from models import gradient_descent as model
@@ -10,13 +12,20 @@ BIN_FEATURE = 'quality_bin'
 
 # perform all data manipulation and feature engineering
 def process_data(dataframe, categorical_data="quality_bin"):
-    step = 0
+    # adjust total sulfur dioxide to remaining sulfur dioxide to be fully independent
+    for i in dataframe.index:
+        dataframe.at[i, 'total sulfur dioxide'] -= dataframe.at[i, 'free sulfur dioxide']
+    dataframe.rename(columns={'total sulfur dioxide': 'other sulfur dioxide'}, inplace=True)
+
+    dataframe = validation.variance_threshold(dataframe, BIN_FEATURE)
     processed = manip.normalize(dataframe, categorical_data)
     processed = manip.add_bias(processed)
+
     # processed = manip.add_squares(processed, categorical_data)
     # processed = manip.add_products(processed, categorical_data)
     # processed = manip.add_products_squares(processed, categorical_data)
     # processed = drop_outliers(processed, 10)
+
     return processed
 
 
@@ -39,12 +48,23 @@ def train_and_predict(training_data, validation_data, binary_feature=BIN_FEATURE
             correct_count += 1
 
     accuracy = correct_count/len(real_results)
-    return accuracy
+    return weights, fitness, accuracy
 
 
 raw_data = importer.get_data('winequality-red.csv')
+
 dataset = process_data(raw_data, BIN_FEATURE)
+
+
+print('plotting isolated variables')
+
+
 print('starting validation...')
 
-gradient = train_and_predict
-acc = validation.kfold_validate(dataset, 5, gradient, BIN_FEATURE)
+accuracy_function = train_and_predict
+
+best = validation.backwards_elimination(dataset, BIN_FEATURE, accuracy_function)
+print(best)
+
+# take the best features and train again on the entire dataset, return the weights of the model
+

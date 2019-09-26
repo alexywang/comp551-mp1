@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 
-LEARNING_RATE = 0.0005
-TOLERANCE = 0.00001
+LEARNING_RATE = 0.00005
+TOLERANCE = 0.0005
 
 
 def _lgc(x):
@@ -30,7 +30,7 @@ def _gradient_ascent(data, fitness_gradient, learning_rate, tolerance, binary_fe
     weights_static = False
 
     while not weights_static:
-        gradient = fitness_gradient(data, weights)
+        gradient = fitness_gradient(data, weights, binary_feature)
 
         adjustment_norm = np.linalg.norm(gradient) * learning_rate
         if opt_print:
@@ -45,15 +45,15 @@ def _gradient_ascent(data, fitness_gradient, learning_rate, tolerance, binary_fe
     return weights
 
 
-def fit(training_data, opt_print=False):
+def fit(training_data, binary_feature, opt_print=False):
     """
     A wrapper for the gradient ascent function.
 
     :param training_data: The data to be trained over. Expected to be in PANDAS Dataframe form.
     :return: A tuple containg the weights of the model, followed by the final value of the fitness function.
     """
-    weights = _gradient_ascent(training_data, log_likelihood_gradient, LEARNING_RATE, TOLERANCE, opt_print=opt_print)
-    fitness = log_likelihood(training_data, weights)
+    weights = _gradient_ascent(training_data, log_likelihood_gradient, LEARNING_RATE, TOLERANCE, binary_feature=binary_feature, opt_print=opt_print)
+    fitness = log_likelihood(training_data, weights, binary_feature)
     return weights, fitness
 
 

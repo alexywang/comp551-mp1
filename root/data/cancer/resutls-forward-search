@@ -1,0 +1,81 @@
+C:\Users\alexy\PycharmProjects\COMP551\Ass1\venv\Scripts\python.exe C:/Users/alexy/PycharmProjects/COMP551/Ass1/comp551-mp1/root/cancer.py
+     clump_thickness  size_uniformity  shape_uniformity  ...  mitoses  class  bias
+0                  8                3                 4  ...        1      1     1
+1                  8                8                 7  ...        7      1     1
+2                  1                1                 1  ...        1      0     1
+3                  1                1                 2  ...        1      0     1
+4                  1                1                 1  ...        1      0     1
+..               ...              ...               ...  ...      ...    ...   ...
+678                9                4                 5  ...        1      1     1
+679                1                1                 1  ...        1      0     1
+680               10                5                 7  ...        8      1     1
+681                4                1                 1  ...        1      0     1
+682               10               10                10  ...        8      1     1
+
+[683 rows x 11 columns]
+Expanding to 3 features. Best Accuracy: 0. Features Remaining: 9
+['class', 'bias', 'clump_thickness'] Accuracy: 0.8608105074090705
+['class', 'bias', 'size_uniformity'] Accuracy: 0.9303210597215987
+['class', 'bias', 'shape_uniformity'] Accuracy: 0.9260776829815895
+['class', 'bias', 'adhesion'] Accuracy: 0.8651661427929952
+['class', 'bias', 'single_epithelial_size'] Accuracy: 0.8770992366412214
+['class', 'bias', 'bare_nuclei'] Accuracy: 0.900684777727885
+['class', 'bias', 'bland_chromatin'] Accuracy: 0.8974629546475079
+['class', 'bias', 'normal_nucleoli'] Accuracy: 0.870655590480467
+['class', 'bias', 'mitoses'] Accuracy: 0.7628536147283341
+Accuracy Improvement: 0.9303210597215987
+Expanding to 4 features. Best Accuracy: 0.9303210597215987. Features Remaining: 8
+['class', 'bias', 'size_uniformity', 'clump_thickness'] Accuracy: 0.9421980242478671
+['class', 'bias', 'size_uniformity', 'shape_uniformity'] Accuracy: 0.9452514593623709
+['class', 'bias', 'size_uniformity', 'adhesion'] Accuracy: 0.9363156713066905
+['class', 'bias', 'size_uniformity', 'single_epithelial_size'] Accuracy: 0.9407274360125729
+['class', 'bias', 'size_uniformity', 'bare_nuclei'] Accuracy: 0.9570722945666816
+['class', 'bias', 'size_uniformity', 'bland_chromatin'] Accuracy: 0.9392007184553212
+['class', 'bias', 'size_uniformity', 'normal_nucleoli'] Accuracy: 0.9334306241580602
+['class', 'bias', 'size_uniformity', 'mitoses'] Accuracy: 0.9318477772788505
+Accuracy Improvement: 0.026751234845082905
+Expanding to 5 features. Best Accuracy: 0.9570722945666816. Features Remaining: 7
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'clump_thickness'] Accuracy: 0.959957341715312
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'shape_uniformity'] Accuracy: 0.9556017063313875
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'adhesion'] Accuracy: 0.9526044005388415
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'single_epithelial_size'] Accuracy: 0.9556017063313875
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'bland_chromatin'] Accuracy: 0.9555455770094298
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli'] Accuracy: 0.9600696003592276
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'mitoses'] Accuracy: 0.9585428828019757
+Accuracy Improvement: 0.002997305792545979
+Expanding to 6 features. Best Accuracy: 0.9600696003592276. Features Remaining: 6
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness'] Accuracy: 0.963010776829816
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'shape_uniformity'] Accuracy: 0.96001347103727
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'adhesion'] Accuracy: 0.9541872474180512
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'single_epithelial_size'] Accuracy: 0.9615401885945218
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'bland_chromatin'] Accuracy: 0.9600696003592276
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'mitoses'] Accuracy: 0.9600696003592276
+Accuracy Improvement: 0.002941176470588336
+Expanding to 7 features. Best Accuracy: 0.963010776829816. Features Remaining: 5
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'shape_uniformity'] Accuracy: 0.9659519533004041
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'adhesion'] Accuracy: 0.9644813650651101
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'single_epithelial_size'] Accuracy: 0.9659519533004041
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'bland_chromatin'] Accuracy: 0.9644252357431522
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'mitoses'] Accuracy: 0.963010776829816
+Accuracy Improvement: 0.002941176470588114
+Expanding to 8 features. Best Accuracy: 0.9659519533004041. Features Remaining: 4
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'shape_uniformity', 'adhesion'] Accuracy: 0.9600696003592276
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'shape_uniformity', 'single_epithelial_size'] Accuracy: 0.9644813650651101
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'shape_uniformity', 'bland_chromatin'] Accuracy: 0.9659519533004041
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'shape_uniformity', 'mitoses'] Accuracy: 0.9644813650651101
+Accuracy Improvement: 0.0
+Expanding to 9 features. Best Accuracy: 0.9659519533004041. Features Remaining: 3
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'shape_uniformity', 'bland_chromatin', 'adhesion'] Accuracy: 0.9585990121239336
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'shape_uniformity', 'bland_chromatin', 'single_epithelial_size'] Accuracy: 0.9659519533004041
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'shape_uniformity', 'bland_chromatin', 'mitoses'] Accuracy: 0.9644813650651101
+Accuracy Improvement: 0.0
+Expanding to 10 features. Best Accuracy: 0.9659519533004041. Features Remaining: 2
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'shape_uniformity', 'bland_chromatin', 'single_epithelial_size', 'adhesion'] Accuracy: 0.9644813650651101
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'shape_uniformity', 'bland_chromatin', 'single_epithelial_size', 'mitoses'] Accuracy: 0.9615401885945218
+Accuracy Improvement: -0.0014705882352940014
+Expanding to 11 features. Best Accuracy: 0.9659519533004041. Features Remaining: 1
+['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'shape_uniformity', 'bland_chromatin', 'single_epithelial_size', 'adhesion', 'mitoses'] Accuracy: 0.9644813650651101
+Accuracy Improvement: -0.0014705882352940014
+(0.9659519533004041, ['class', 'bias', 'size_uniformity', 'bare_nuclei', 'normal_nucleoli', 'clump_thickness', 'shape_uniformity'])
+
+Process finished with exit code 0

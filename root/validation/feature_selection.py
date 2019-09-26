@@ -99,7 +99,7 @@ def backwards_elimination(dataset, binary_feature, accuracy_function, min_improv
 
 
 # Forward search expansion of features
-def forward_search(dataset, binary_feature, accuracy_function, min_improvement=0.005):
+def forward_search(dataset, binary_feature, accuracy_function, min_improvement=0):
     features = list(dataset.columns)
     features.remove(binary_feature)
     features.remove('bias')
@@ -131,7 +131,8 @@ def forward_search(dataset, binary_feature, accuracy_function, min_improvement=0
             best_accuracy = curr_best_acc
             best_features = list(included_features)
         else:
-            break
+            if min_improvement != 0:
+                break
 
     # Either all features have been tried or we consecutive failures exceeded the max
     return best_accuracy, best_features

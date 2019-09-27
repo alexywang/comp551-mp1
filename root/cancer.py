@@ -31,12 +31,13 @@ def train_and_predict(training_data, validation_data, binary_feature=BIN_FEATURE
 
 dataset = manip.add_bias(importer.get_data())
 
-print(dataset)
+cov = dataset.cov().values
+print(cov)
+# accuracy_function = train_and_predict
 
-accuracy_function = train_and_predict
+# best = validation.forward_search(dataset, BIN_FEATURE, accuracy_function)
+# print(best)
 
-best = validation.forward_search(dataset, BIN_FEATURE, accuracy_function)
-print(best)
-
+dataset.drop(BIN_FEATURE, axis='columns')
 
 

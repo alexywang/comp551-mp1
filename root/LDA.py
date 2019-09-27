@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 
-def imp():
+def imp(BIN_FEATURE):
     raw_data = pd.read_csv("breast-cancer-wisconsin.csv")
     treated_data = raw_data
     treated_data = (treated_data.loc[treated_data["compactness"] != '?'])

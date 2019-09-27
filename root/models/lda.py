@@ -21,7 +21,7 @@ def get_data():
 
 
 def cov_matrix(df, binary_feature):
-    return np.array([df.drop(binary_feature, axis='columns').cov().values])
+    return np.array(df.drop(binary_feature, axis='columns').cov().values)
 
 
 # Returns P(y=1)/P(y=0)
@@ -38,16 +38,37 @@ def mean_vector(df, binary_feature, class_val):
 
 
 # Returns a function that takes in a vector of feature values
-def fit(training_set, binary_feature):
-    cov = cov_matrix(training_set, binary_feature)
-    mean0 = mean_vector(training_set, binary_feature, 0)
-    mean1 = mean_vector(training_set, binary_feature, 1)
-    # def lda_func(param_vector):
+def fit(data, binary_feature):
+    # Calculate mean vectors and covariance matrix
+    cov = cov_matrix(data, binary_feature)
+    mean0 = mean_vector(data, binary_feature, 0)
+    mean1 = mean_vector(data, binary_feature, 1)
+    p1overp0 = prob_proportion(data, binary_feature)
+
+    # Define the log odds function based on the inputted data set
+    def lda_func(param_vector):
+        t1 = p1overp0
+        t2 = -(1 / 2) * np.dot(np.dot(mean0, np.linalg.inv(cov)), np.transpose(mean0))
+        t3 = (1 / 2) * np.dot(np.dot(mean1, np.linalg.inv(cov)), np.transpose(mean1))
+        t4 = np.dot(np.dot(param_vector, np.linalg.inv(cov)), np.transpose(np.subtract(mean1, mean0)))
+        return math.log(t1+t2+t3+t4, math.e)
+
+    prediction_func = lda_func
+    return prediction_func
+
+
+# Returns a list of predictions on a set given a training set and validation set
+def predict(training_set, dataset, binary_feature):
+    prediction_func = fit(training_set, binary_feature)
+    predictions = []
+    for i in range(0, len(dataset)):
+        row = dataset.drop(binary_feature, axis='columns')
+        param_vector = np.array([dataset.iloc[i]])
+        predictions.append(param_vector)
+    return predictions
 
 
 d = get_data()
-
-a = np.array([[1,2,3,4,5]])
 
 print(np.transpose(cov_matrix(d, 'class')))
 print()

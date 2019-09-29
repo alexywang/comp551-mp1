@@ -37,8 +37,8 @@ def plot_cov():
     heatmap = sns.heatmap(cov, annot=True, linewidths=0, vmin=0, cmap="RdBu_r")
 
 def plot_histogram():
-    hist = data.hist(bins=10)
+    hist = data.hist(bins=20)
+    plt.show()
 
 
 plot_histogram()
-plt.show()

@@ -1,0 +1,302 @@
+C:\Users\alexy\PycharmProjects\COMP551\Ass1\venv\Scripts\python.exe C:/Users/alexy/PycharmProjects/COMP551/Ass1/comp551-mp1/root/wine-lda.py
+DEFAULT FEATURES: 0.7436116047361381
+Expanding to 3 features. Best Accuracy: 0. Features Remaining: 22
+['quality_bin', 'bias', 'fixed acidity'] Accuracy: 0.5188686779945291
+['quality_bin', 'bias', 'volatile acidity'] Accuracy: 0.6391470159535171
+['quality_bin', 'bias', 'citric acid'] Accuracy: 0.5516302937124374
+['quality_bin', 'bias', 'residual sugar'] Accuracy: 0.5334384921031089
+['quality_bin', 'bias', 'chlorides'] Accuracy: 0.5415590120400136
+['quality_bin', 'bias', 'free sulfur dioxide'] Accuracy: 0.5422059381426831
+['quality_bin', 'bias', 'total sulfur dioxide'] Accuracy: 0.614515903600024
+['quality_bin', 'bias', 'density'] Accuracy: 0.5509733841822574
+['quality_bin', 'bias', 'pH'] Accuracy: 0.5334185252480882
+['quality_bin', 'bias', 'sulphates'] Accuracy: 0.6384901064233373
+['quality_bin', 'bias', 'alcohol'] Accuracy: 0.7027194856538146
+['quality_bin', 'bias', 'fixed acidity_squared'] Accuracy: 0.5182417187468802
+['quality_bin', 'bias', 'volatile acidity_squared'] Accuracy: 0.6291056845636245
+['quality_bin', 'bias', 'citric acid_squared'] Accuracy: 0.5761416049358065
+['quality_bin', 'bias', 'residual sugar_squared'] Accuracy: 0.5309306551125133
+['quality_bin', 'bias', 'chlorides_squared'] Accuracy: 0.5391010921869697
+['quality_bin', 'bias', 'free sulfur dioxide_squared'] Accuracy: 0.5422458718527244
+['quality_bin', 'bias', 'total sulfur dioxide_squared'] Accuracy: 0.6070822434758302
+['quality_bin', 'bias', 'density_squared'] Accuracy: 0.5509733841822574
+['quality_bin', 'bias', 'pH_squared'] Accuracy: 0.5327815825729291
+['quality_bin', 'bias', 'sulphates_squared'] Accuracy: 0.6235329353273567
+['quality_bin', 'bias', 'alcohol_squared'] Accuracy: 0.7027194856538146
+Accuracy Improvement: 0.7027194856538146
+Expanding to 4 features. Best Accuracy: 0.7027194856538146. Features Remaining: 21
+['quality_bin', 'bias', 'alcohol', 'fixed acidity'] Accuracy: 0.7184533674100992
+['quality_bin', 'bias', 'alcohol', 'volatile acidity'] Accuracy: 0.7436315715911588
+['quality_bin', 'bias', 'alcohol', 'citric acid'] Accuracy: 0.7108999061557814
+['quality_bin', 'bias', 'alcohol', 'residual sugar'] Accuracy: 0.7046003633967615
+['quality_bin', 'bias', 'alcohol', 'chlorides'] Accuracy: 0.7008286244833576
+['quality_bin', 'bias', 'alcohol', 'free sulfur dioxide'] Accuracy: 0.7020725595511452
+['quality_bin', 'bias', 'alcohol', 'total sulfur dioxide'] Accuracy: 0.7083820857376756
+['quality_bin', 'bias', 'alcohol', 'density'] Accuracy: 0.7039734041491125
+['quality_bin', 'bias', 'alcohol', 'pH'] Accuracy: 0.7152686540343031
+['quality_bin', 'bias', 'alcohol', 'sulphates'] Accuracy: 0.7021324601162071
+['quality_bin', 'bias', 'alcohol', 'fixed acidity_squared'] Accuracy: 0.7146616616416749
+['quality_bin', 'bias', 'alcohol', 'volatile acidity_squared'] Accuracy: 0.7329433140985964
+['quality_bin', 'bias', 'alcohol', 'citric acid_squared'] Accuracy: 0.7077750933450473
+['quality_bin', 'bias', 'alcohol', 'residual sugar_squared'] Accuracy: 0.7020825429786554
+['quality_bin', 'bias', 'alcohol', 'chlorides_squared'] Accuracy: 0.7027194856538146
+['quality_bin', 'bias', 'alcohol', 'free sulfur dioxide_squared'] Accuracy: 0.7020825429786555
+['quality_bin', 'bias', 'alcohol', 'total sulfur dioxide_squared'] Accuracy: 0.7096859213705249
+['quality_bin', 'bias', 'alcohol', 'density_squared'] Accuracy: 0.7039734041491125
+['quality_bin', 'bias', 'alcohol', 'pH_squared'] Accuracy: 0.7146416947866542
+['quality_bin', 'bias', 'alcohol', 'sulphates_squared'] Accuracy: 0.708999061557814
+['quality_bin', 'bias', 'alcohol', 'alcohol_squared'] Accuracy: 0.7039833875766228
+Accuracy Improvement: 0.04091208593734419
+Expanding to 5 features. Best Accuracy: 0.7436315715911588. Features Remaining: 20
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'fixed acidity'] Accuracy: 0.7329433140985964
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'citric acid'] Accuracy: 0.7386059141824571
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar'] Accuracy: 0.7442585308388077
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'chlorides'] Accuracy: 0.7430046123435098
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'free sulfur dioxide'] Accuracy: 0.7379689715072979
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'total sulfur dioxide'] Accuracy: 0.7404768084978935
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'density'] Accuracy: 0.7386059141824571
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'pH'] Accuracy: 0.7436715053012001
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'sulphates'] Accuracy: 0.7347842581315017
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'fixed acidity_squared'] Accuracy: 0.734824191841543
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'volatile acidity_squared'] Accuracy: 0.7417407104207017
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'citric acid_squared'] Accuracy: 0.7404867919254038
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar_squared'] Accuracy: 0.7430046123435099
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'chlorides_squared'] Accuracy: 0.7430046123435099
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'free sulfur dioxide_squared'] Accuracy: 0.739232873430106
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'total sulfur dioxide_squared'] Accuracy: 0.735451151089192
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'density_squared'] Accuracy: 0.7386059141824571
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'pH_squared'] Accuracy: 0.7436715053012001
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'sulphates_squared'] Accuracy: 0.7316694287482779
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'alcohol_squared'] Accuracy: 0.7304554439630213
+Accuracy Improvement: 0.0006269592476488839
+Expanding to 6 features. Best Accuracy: 0.7442585308388077. Features Remaining: 19
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'fixed acidity'] Accuracy: 0.7298185012878621
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'citric acid'] Accuracy: 0.7404967753529141
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides'] Accuracy: 0.7430046123435099
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'free sulfur dioxide'] Accuracy: 0.739232873430106
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'total sulfur dioxide'] Accuracy: 0.7392129065750854
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'density'] Accuracy: 0.7361180440468822
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'pH'] Accuracy: 0.7423976199508816
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'sulphates'] Accuracy: 0.733530339636204
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'fixed acidity_squared'] Accuracy: 0.7361180440468822
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'volatile acidity_squared'] Accuracy: 0.7436215881636483
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'citric acid_squared'] Accuracy: 0.739232873430106
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'residual sugar_squared'] Accuracy: 0.7386158976099674
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared'] Accuracy: 0.7436315715911588
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'free sulfur dioxide_squared'] Accuracy: 0.7404768084978934
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'total sulfur dioxide_squared'] Accuracy: 0.7360880937643512
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'density_squared'] Accuracy: 0.7361180440468822
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'pH_squared'] Accuracy: 0.7423976199508816
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'sulphates_squared'] Accuracy: 0.731042469500629
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'alcohol_squared'] Accuracy: 0.734854142124074
+Accuracy Improvement: -0.0006269592476488839
+Expanding to 7 features. Best Accuracy: 0.7442585308388077. Features Remaining: 18
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'fixed acidity'] Accuracy: 0.7329532975261067
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'citric acid'] Accuracy: 0.7398698161052653
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'chlorides'] Accuracy: 0.7430046123435098
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'free sulfur dioxide'] Accuracy: 0.7404768084978934
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'total sulfur dioxide'] Accuracy: 0.7398398658227343
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'density'] Accuracy: 0.7354910847992333
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'pH'] Accuracy: 0.7423876365233713
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'sulphates'] Accuracy: 0.7366751193019587
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'fixed acidity_squared'] Accuracy: 0.7361180440468822
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared'] Accuracy: 0.7436215881636483
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'citric acid_squared'] Accuracy: 0.7373519956871594
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'residual sugar_squared'] Accuracy: 0.7386059141824571
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'free sulfur dioxide_squared'] Accuracy: 0.7398498492502446
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'total sulfur dioxide_squared'] Accuracy: 0.7367050695844898
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'density_squared'] Accuracy: 0.7354910847992333
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'pH_squared'] Accuracy: 0.7423876365233713
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'sulphates_squared'] Accuracy: 0.7354411676616815
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'alcohol_squared'] Accuracy: 0.7342271828764251
+Accuracy Improvement: -0.0006369426751593465
+Expanding to 8 features. Best Accuracy: 0.7442585308388077. Features Remaining: 17
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'fixed acidity'] Accuracy: 0.7316993790308088
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'citric acid'] Accuracy: 0.7398598326777549
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'chlorides'] Accuracy: 0.7429946289159994
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'free sulfur dioxide'] Accuracy: 0.7398498492502446
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'total sulfur dioxide'] Accuracy: 0.7385859473274364
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'density'] Accuracy: 0.7354811013717228
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH'] Accuracy: 0.7436415550186691
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'sulphates'] Accuracy: 0.7373020785496076
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'fixed acidity_squared'] Accuracy: 0.7354910847992333
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'citric acid_squared'] Accuracy: 0.7373519956871594
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'residual sugar_squared'] Accuracy: 0.7386059141824571
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'free sulfur dioxide_squared'] Accuracy: 0.7392228900025957
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'total sulfur dioxide_squared'] Accuracy: 0.7367050695844898
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'density_squared'] Accuracy: 0.7354811013717228
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH_squared'] Accuracy: 0.7436415550186691
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'sulphates_squared'] Accuracy: 0.7348142084140327
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'alcohol_squared'] Accuracy: 0.736108060619372
+Accuracy Improvement: -0.0006169758201385322
+Expanding to 9 features. Best Accuracy: 0.7442585308388077. Features Remaining: 16
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'fixed acidity'] Accuracy: 0.7316993790308088
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'citric acid'] Accuracy: 0.7379789549348083
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'chlorides'] Accuracy: 0.7398797995327756
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide'] Accuracy: 0.7386258810374777
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'total sulfur dioxide'] Accuracy: 0.7379090709422359
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'density'] Accuracy: 0.7355010682267438
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'sulphates'] Accuracy: 0.7379589880797875
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'fixed acidity_squared'] Accuracy: 0.735481101371723
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'citric acid_squared'] Accuracy: 0.739889782960286
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'residual sugar_squared'] Accuracy: 0.7398797995327756
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared'] Accuracy: 0.7411437014555837
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'total sulfur dioxide_squared'] Accuracy: 0.737342012259649
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'density_squared'] Accuracy: 0.7355010682267438
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'pH_squared'] Accuracy: 0.7404867919254038
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'sulphates_squared'] Accuracy: 0.7329433140985964
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'alcohol_squared'] Accuracy: 0.7373819459696904
+Accuracy Improvement: -0.003114829383223938
+Expanding to 10 features. Best Accuracy: 0.7442585308388077. Features Remaining: 15
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'fixed acidity'] Accuracy: 0.7323363217059681
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'citric acid'] Accuracy: 0.7373519956871594
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'chlorides'] Accuracy: 0.7386358644649882
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide'] Accuracy: 0.7405067587804245
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'total sulfur dioxide'] Accuracy: 0.7398198989677136
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'density'] Accuracy: 0.7336201904837969
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'sulphates'] Accuracy: 0.735451151089192
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'fixed acidity_squared'] Accuracy: 0.734854142124074
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'citric acid_squared'] Accuracy: 0.737998921789829
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'residual sugar_squared'] Accuracy: 0.7360980771918616
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'total sulfur dioxide_squared'] Accuracy: 0.7360880937643512
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'density_squared'] Accuracy: 0.7336201904837969
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'pH_squared'] Accuracy: 0.7386059141824571
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'sulphates_squared'] Accuracy: 0.7348142084140327
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'alcohol_squared'] Accuracy: 0.7386258810374777
+Accuracy Improvement: -0.0037517720583831737
+Expanding to 11 features. Best Accuracy: 0.7442585308388077. Features Remaining: 14
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'fixed acidity'] Accuracy: 0.732963280953617
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'citric acid'] Accuracy: 0.7392428568576164
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'chlorides'] Accuracy: 0.7386258810374778
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide'] Accuracy: 0.7436215881636483
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'density'] Accuracy: 0.7336002236287762
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'sulphates'] Accuracy: 0.7354411676616817
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'fixed acidity_squared'] Accuracy: 0.7348840924066049
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'citric acid_squared'] Accuracy: 0.7379889383623185
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'residual sugar_squared'] Accuracy: 0.7360980771918616
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide_squared'] Accuracy: 0.7423976199508815
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'density_squared'] Accuracy: 0.7342271828764251
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'pH_squared'] Accuracy: 0.7404867919254038
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'sulphates_squared'] Accuracy: 0.7354511510891919
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'alcohol_squared'] Accuracy: 0.7392528402851267
+Accuracy Improvement: -0.0006369426751593465
+Expanding to 12 features. Best Accuracy: 0.7442585308388077. Features Remaining: 13
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'fixed acidity'] Accuracy: 0.7398698161052653
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'citric acid'] Accuracy: 0.7474132939320728
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'chlorides'] Accuracy: 0.7423776530958608
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'density'] Accuracy: 0.7398598326777549
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates'] Accuracy: 0.7480702034622526
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'fixed acidity_squared'] Accuracy: 0.7429946289159994
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'citric acid_squared'] Accuracy: 0.7474033105045624
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar_squared'] Accuracy: 0.7448954735139668
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'total sulfur dioxide_squared'] Accuracy: 0.744238563983787
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'density_squared'] Accuracy: 0.7398598326777549
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'pH_squared'] Accuracy: 0.7423576862408403
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates_squared'] Accuracy: 0.7455324161891261
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'alcohol_squared'] Accuracy: 0.7461493920092647
+Accuracy Improvement: 0.0038116726234449505
+Expanding to 13 features. Best Accuracy: 0.7480702034622526. Features Remaining: 12
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'fixed acidity'] Accuracy: 0.7486871792823913
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'citric acid'] Accuracy: 0.7486771958548809
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides'] Accuracy: 0.7493141385300401
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'density'] Accuracy: 0.7461593754367749
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'fixed acidity_squared'] Accuracy: 0.7455523830441467
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'citric acid_squared'] Accuracy: 0.7493141385300401
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'residual sugar_squared'] Accuracy: 0.7455423996166364
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'total sulfur dioxide_squared'] Accuracy: 0.745562366471657
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'density_squared'] Accuracy: 0.7461593754367749
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'pH_squared'] Accuracy: 0.7423876365233711
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'sulphates_squared'] Accuracy: 0.7474132939320728
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'alcohol_squared'] Accuracy: 0.7493041551025298
+Accuracy Improvement: 0.0012439350677875272
+Expanding to 14 features. Best Accuracy: 0.7493141385300401. Features Remaining: 11
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'fixed acidity'] Accuracy: 0.7442884811213386
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid'] Accuracy: 0.7512049997004973
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'density'] Accuracy: 0.7461593754367749
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'fixed acidity_squared'] Accuracy: 0.7449254237964978
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid_squared'] Accuracy: 0.7505680570253379
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'residual sugar_squared'] Accuracy: 0.7474232773595831
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'total sulfur dioxide_squared'] Accuracy: 0.7486871792823913
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'density_squared'] Accuracy: 0.7461593754367749
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'pH_squared'] Accuracy: 0.746159375436775
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'sulphates_squared'] Accuracy: 0.7474033105045624
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'alcohol_squared'] Accuracy: 0.7474132939320728
+Accuracy Improvement: 0.0018908611704571143
+Expanding to 15 features. Best Accuracy: 0.7512049997004973. Features Remaining: 10
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'fixed acidity'] Accuracy: 0.7474332607870935
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'density'] Accuracy: 0.748050236607232
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'fixed acidity_squared'] Accuracy: 0.7493241219575505
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared'] Accuracy: 0.7512049997004971
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'residual sugar_squared'] Accuracy: 0.745502465906595
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'total sulfur dioxide_squared'] Accuracy: 0.7480702034622527
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'density_squared'] Accuracy: 0.748050236607232
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'pH_squared'] Accuracy: 0.7461394085817543
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'sulphates_squared'] Accuracy: 0.7505880238803586
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'alcohol_squared'] Accuracy: 0.7449154403689875
+Accuracy Improvement: -1.1102230246251565e-16
+Expanding to 16 features. Best Accuracy: 0.7512049997004973. Features Remaining: 9
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'fixed acidity'] Accuracy: 0.7486871792823913
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density'] Accuracy: 0.7493241219575505
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'fixed acidity_squared'] Accuracy: 0.7493241219575505
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'residual sugar_squared'] Accuracy: 0.7492841882475092
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'total sulfur dioxide_squared'] Accuracy: 0.7474432442146038
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density_squared'] Accuracy: 0.7493241219575505
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'pH_squared'] Accuracy: 0.7423576862408402
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'sulphates_squared'] Accuracy: 0.748707146137412
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'alcohol_squared'] Accuracy: 0.7455423996166364
+Accuracy Improvement: -0.0018808777429467627
+Expanding to 17 features. Best Accuracy: 0.7512049997004973. Features Remaining: 8
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'fixed acidity'] Accuracy: 0.7474033105045624
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'fixed acidity_squared'] Accuracy: 0.7455224327616158
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared'] Accuracy: 0.7505680570253379
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'total sulfur dioxide_squared'] Accuracy: 0.7443084479763592
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'density_squared'] Accuracy: 0.7499311143501787
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'pH_squared'] Accuracy: 0.7423576862408402
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'sulphates_squared'] Accuracy: 0.7449054569414773
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'alcohol_squared'] Accuracy: 0.7442784976938283
+Accuracy Improvement: -0.0006369426751593465
+Expanding to 18 features. Best Accuracy: 0.7512049997004973. Features Remaining: 7
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'fixed acidity'] Accuracy: 0.745502465906595
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'fixed acidity_squared'] Accuracy: 0.7499311143501787
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'total sulfur dioxide_squared'] Accuracy: 0.7474332607870935
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared'] Accuracy: 0.749941097777689
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'pH_squared'] Accuracy: 0.7461493920092647
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'sulphates_squared'] Accuracy: 0.7486771958548809
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'alcohol_squared'] Accuracy: 0.749941097777689
+Accuracy Improvement: -0.0012639019228082304
+Expanding to 19 features. Best Accuracy: 0.7512049997004973. Features Remaining: 6
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'fixed acidity'] Accuracy: 0.7448755066589461
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'fixed acidity_squared'] Accuracy: 0.7493041551025298
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'total sulfur dioxide_squared'] Accuracy: 0.7474332607870935
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'pH_squared'] Accuracy: 0.7448954735139668
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'sulphates_squared'] Accuracy: 0.7492841882475092
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared'] Accuracy: 0.7537028532635824
+Accuracy Improvement: 0.002497853563085184
+Expanding to 20 features. Best Accuracy: 0.7537028532635824. Features Remaining: 5
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'fixed acidity'] Accuracy: 0.7448954735139668
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'fixed acidity_squared'] Accuracy: 0.7467963181119343
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'total sulfur dioxide_squared'] Accuracy: 0.7505580735978276
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'pH_squared'] Accuracy: 0.7461294251542439
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'sulphates_squared'] Accuracy: 0.7461493920092647
+Accuracy Improvement: -0.003144779665754882
+Expanding to 21 features. Best Accuracy: 0.7537028532635824. Features Remaining: 4
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'total sulfur dioxide_squared', 'fixed acidity'] Accuracy: 0.7448954735139668
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'total sulfur dioxide_squared', 'fixed acidity_squared'] Accuracy: 0.7474332607870935
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'total sulfur dioxide_squared', 'pH_squared'] Accuracy: 0.7461593754367749
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'total sulfur dioxide_squared', 'sulphates_squared'] Accuracy: 0.7442585308388076
+Accuracy Improvement: -0.00626959247648895
+Expanding to 22 features. Best Accuracy: 0.7537028532635824. Features Remaining: 3
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'total sulfur dioxide_squared', 'fixed acidity_squared', 'fixed acidity'] Accuracy: 0.7411037677455424
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'total sulfur dioxide_squared', 'fixed acidity_squared', 'pH_squared'] Accuracy: 0.7461493920092647
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'total sulfur dioxide_squared', 'fixed acidity_squared', 'sulphates_squared'] Accuracy: 0.7442585308388076
+Accuracy Improvement: -0.007553461254317773
+Expanding to 23 features. Best Accuracy: 0.7537028532635824. Features Remaining: 2
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'total sulfur dioxide_squared', 'fixed acidity_squared', 'pH_squared', 'fixed acidity'] Accuracy: 0.7410738174630114
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'total sulfur dioxide_squared', 'fixed acidity_squared', 'pH_squared', 'sulphates_squared'] Accuracy: 0.7430046123435098
+Accuracy Improvement: -0.010698240920072655
+Expanding to 24 features. Best Accuracy: 0.7537028532635824. Features Remaining: 1
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared', 'total sulfur dioxide_squared', 'fixed acidity_squared', 'pH_squared', 'sulphates_squared', 'fixed acidity'] Accuracy: 0.7467064672643413
+Accuracy Improvement: -0.006996385999241128
+WITH FORWARD SEARCH: (0.7537028532635824, ['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar', 'chlorides_squared', 'volatile acidity_squared', 'pH', 'free sulfur dioxide_squared', 'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'chlorides', 'citric acid', 'citric acid_squared', 'density', 'residual sugar_squared', 'density_squared', 'alcohol_squared'])
+
+Process finished with exit code 0

@@ -26,18 +26,31 @@ def train_and_predict(training_data, validation_data, binary_feature=BIN_FEATURE
             correct_count += 1
 
     accuracy = correct_count/len(real_results)
-    return weights, fitness, accuracy
+    return accuracy
 
 
-dataset = manip.add_bias(importer.get_data())
+dataset = importer.get_data('breast-cancer-wisconsin.csv')
+# dataset = validation.variance_threshold(dataset, BIN_FEATURE)
+# datset = validation.remove_correlated(dataset, BIN_FEATURE)
+dataset = manip.drop_outliers(dataset, 5)
+dataset = manip.normalize(dataset, BIN_FEATURE)
+# dataset = manip.add_squares(dataset, BIN_FEATURE)
+dataset = manip.add_bias(dataset)
+accuracy_function = train_and_predict
 
-cov = dataset.cov().values
-print(cov)
-# accuracy_function = train_and_predict
+print('DEFAULT FEATURES: ', validation.evaluate_acc(dataset, train_and_predict, BIN_FEATURE))
 
-# best = validation.forward_search(dataset, BIN_FEATURE, accuracy_function)
-# print(best)
+best = validation.forward_search(dataset, BIN_FEATURE, accuracy_function)
 
-dataset.drop(BIN_FEATURE, axis='columns')
+print('WITH FORWARD SEARCH:', best)
+
+# Train our best subset of features finally on the entire dataset.
+
+best_features = ['shape_uniformity', 'single_epithelial_size', 'bland_chromatin', 'mitoses', 'class', 'clump_thickness_squared', 'size_uniformity_squared', 'shape_uniformity_squared', 'single_epithelial_size_squared', 'bare_nuclei_squared']
+final_dataset = validation.filter_features(dataset, BIN_FEATURE, best_features)
+acc = validation.evaluate_acc(final_dataset, accuracy_function, BIN_FEATURE)
+print(acc)
+print('FINAL MODEL:', model.fit(final_dataset, BIN_FEATURE))
+
 
 

@@ -1,0 +1,139 @@
+C:\Users\alexy\PycharmProjects\COMP551\Ass1\venv\Scripts\python.exe C:/Users/alexy/PycharmProjects/COMP551/Ass1/comp551-mp1/root/wine.py
+DEFAULT FEATURES:  0.7558043723835471
+Expanding to 3 features. Best Accuracy: 0. Features Remaining: 13
+['quality_bin', 'bias', 'fixed acidity'] Accuracy: 0.518559372715795
+['quality_bin', 'bias', 'volatile acidity'] Accuracy: 0.63791392562075
+['quality_bin', 'bias', 'citric acid'] Accuracy: 0.5543690610671804
+['quality_bin', 'bias', 'residual sugar'] Accuracy: 0.5311338516401976
+['quality_bin', 'bias', 'free sulfur dioxide'] Accuracy: 0.542443573216382
+['quality_bin', 'bias', 'other sulfur dioxide'] Accuracy: 0.6199149445145856
+['quality_bin', 'bias', 'pH'] Accuracy: 0.528493587613795
+['quality_bin', 'bias', 'sulphates'] Accuracy: 0.6471326998471659
+['quality_bin', 'bias', 'alcohol'] Accuracy: 0.7041641748067424
+['quality_bin', 'bias', 'log other sulfur dioxide'] Accuracy: 0.6186169623673776
+['quality_bin', 'bias', 'log residual sugar'] Accuracy: 0.5278335216071943
+['quality_bin', 'bias', 'log sulphates'] Accuracy: 0.6444924358207633
+['quality_bin', 'bias', 'log chlorides'] Accuracy: 0.5602099807296167
+Accuracy Improvement: 0.7041641748067424
+Expanding to 4 features. Best Accuracy: 0.7041641748067424. Features Remaining: 12
+['quality_bin', 'bias', 'alcohol', 'fixed acidity'] Accuracy: 0.7174097946707423
+['quality_bin', 'bias', 'alcohol', 'volatile acidity'] Accuracy: 0.7353755509779165
+['quality_bin', 'bias', 'alcohol', 'citric acid'] Accuracy: 0.7141205395707356
+['quality_bin', 'bias', 'alcohol', 'residual sugar'] Accuracy: 0.712096041818947
+['quality_bin', 'bias', 'alcohol', 'free sulfur dioxide'] Accuracy: 0.7034930338671451
+['quality_bin', 'bias', 'alcohol', 'other sulfur dioxide'] Accuracy: 0.7107869847387424
+['quality_bin', 'bias', 'alcohol', 'pH'] Accuracy: 0.7147473807783464
+['quality_bin', 'bias', 'alcohol', 'sulphates'] Accuracy: 0.7154849713159236
+['quality_bin', 'bias', 'alcohol', 'log other sulfur dioxide'] Accuracy: 0.7101601435311317
+['quality_bin', 'bias', 'alcohol', 'log residual sugar'] Accuracy: 0.712062817019957
+['quality_bin', 'bias', 'alcohol', 'log sulphates'] Accuracy: 0.7154960462489203
+['quality_bin', 'bias', 'alcohol', 'log chlorides'] Accuracy: 0.7087957117859437
+Accuracy Improvement: 0.031211376171174088
+Expanding to 5 features. Best Accuracy: 0.7353755509779165. Features Remaining: 11
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'fixed acidity'] Accuracy: 0.734682260172326
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'citric acid'] Accuracy: 0.7373335991317254
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'residual sugar'] Accuracy: 0.7386758810109199
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'free sulfur dioxide'] Accuracy: 0.7386758810109197
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide'] Accuracy: 0.7439453341307284
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'pH'] Accuracy: 0.7400181628901146
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'sulphates'] Accuracy: 0.7373225241987285
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'log other sulfur dioxide'] Accuracy: 0.7399627882251313
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'log residual sugar'] Accuracy: 0.7340554189647153
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'log sulphates'] Accuracy: 0.7392805723525372
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'log chlorides'] Accuracy: 0.7366956829911179
+Accuracy Improvement: 0.008569783152811872
+Expanding to 6 features. Best Accuracy: 0.7439453341307284. Features Remaining: 10
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'fixed acidity'] Accuracy: 0.73860943141294
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'citric acid'] Accuracy: 0.7412939951713293
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'residual sugar'] Accuracy: 0.7445832502713359
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'free sulfur dioxide'] Accuracy: 0.7432741931911311
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'pH'] Accuracy: 0.7438899594657452
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'sulphates'] Accuracy: 0.7525483420825304
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log other sulfur dioxide'] Accuracy: 0.7446275500033225
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log residual sugar'] Accuracy: 0.7445832502713359
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates'] Accuracy: 0.7525704919485238
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log chlorides'] Accuracy: 0.7419651361109265
+Accuracy Improvement: 0.008625157817795381
+Expanding to 7 features. Best Accuracy: 0.7525704919485238. Features Remaining: 9
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'fixed acidity'] Accuracy: 0.753208408089131
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'citric acid'] Accuracy: 0.7519325758079163
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'residual sugar'] Accuracy: 0.7532194830221276
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'free sulfur dioxide'] Accuracy: 0.7532194830221277
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'pH'] Accuracy: 0.7465745232241344
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'sulphates'] Accuracy: 0.7465412984251445
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide'] Accuracy: 0.753890623961725
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log residual sugar'] Accuracy: 0.7538463242297384
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log chlorides'] Accuracy: 0.7505681440627284
+Accuracy Improvement: 0.0013201320132012473
+Expanding to 8 features. Best Accuracy: 0.753890623961725. Features Remaining: 8
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'fixed acidity'] Accuracy: 0.7525372671495336
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'citric acid'] Accuracy: 0.7532305579551244
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'residual sugar'] Accuracy: 0.7525704919485237
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide'] Accuracy: 0.755870821981527
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'pH'] Accuracy: 0.7558265222495404
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'sulphates'] Accuracy: 0.7512503599353224
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'log residual sugar'] Accuracy: 0.7498748532571377
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'log chlorides'] Accuracy: 0.753208408089131
+Accuracy Improvement: 0.001980198019801982
+Expanding to 9 features. Best Accuracy: 0.755870821981527. Features Remaining: 7
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'fixed acidity'] Accuracy: 0.7538795490287284
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'citric acid'] Accuracy: 0.7525704919485238
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'residual sugar'] Accuracy: 0.753890623961725
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'pH'] Accuracy: 0.7558043723835471
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates'] Accuracy: 0.7572241787937184
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'log residual sugar'] Accuracy: 0.7518550512769396
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'log chlorides'] Accuracy: 0.7558486721155336
+Accuracy Improvement: 0.0013533568121913975
+Expanding to 10 features. Best Accuracy: 0.7572241787937184. Features Remaining: 6
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity'] Accuracy: 0.7572131038607216
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'citric acid'] Accuracy: 0.7479389549693224
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'residual sugar'] Accuracy: 0.7525483420825304
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'pH'] Accuracy: 0.7491926373845438
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'log residual sugar'] Accuracy: 0.7538573991627351
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'log chlorides'] Accuracy: 0.7505902939287217
+Accuracy Improvement: -1.1074932996790743e-05
+Expanding to 11 features. Best Accuracy: 0.7572241787937184. Features Remaining: 5
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'citric acid'] Accuracy: 0.7492812368485171
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'residual sugar'] Accuracy: 0.7531862582231377
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'pH'] Accuracy: 0.7524929674175471
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log residual sugar'] Accuracy: 0.7558486721155336
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log chlorides'] Accuracy: 0.758500011074933
+Accuracy Improvement: 0.0012758322812146394
+Expanding to 12 features. Best Accuracy: 0.758500011074933. Features Remaining: 4
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log chlorides', 'citric acid'] Accuracy: 0.754572839834319
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log chlorides', 'residual sugar'] Accuracy: 0.7604691341617382
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log chlorides', 'pH'] Accuracy: 0.7505570691297316
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log chlorides', 'log residual sugar'] Accuracy: 0.7564865882561411
+Accuracy Improvement: 0.001969123086805191
+Expanding to 13 features. Best Accuracy: 0.7604691341617382. Features Remaining: 3
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log chlorides', 'residual sugar', 'citric acid'] Accuracy: 0.7584778612089396
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log chlorides', 'residual sugar', 'pH'] Accuracy: 0.7624493321815403
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log chlorides', 'residual sugar', 'log residual sugar'] Accuracy: 0.7539016988947218
+Accuracy Improvement: 0.001980198019802093
+Expanding to 14 features. Best Accuracy: 0.7624493321815403. Features Remaining: 2
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log chlorides', 'residual sugar', 'pH', 'citric acid'] Accuracy: 0.7544620905043524
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log chlorides', 'residual sugar', 'pH', 'log residual sugar'] Accuracy: 0.7472345892307353
+Accuracy Improvement: -0.007987241677187895
+Expanding to 15 features. Best Accuracy: 0.7624493321815403. Features Remaining: 1
+['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log chlorides', 'residual sugar', 'pH', 'citric acid', 'log residual sugar'] Accuracy: 0.7498859281901344
+Accuracy Improvement: -0.012563403991405875
+WITH FORWARD SEARCH: (0.7624493321815403, ['quality_bin', 'bias', 'alcohol', 'volatile acidity', 'other sulfur dioxide', 'log sulphates', 'log other sulfur dioxide', 'free sulfur dioxide', 'sulphates', 'fixed acidity', 'log chlorides', 'residual sugar', 'pH'])
+      fixed acidity  volatile acidity  ...  log chlorides  bias
+0         -0.354424          0.181321  ...       1.571908     1
+1         -0.297254         -0.155833  ...       0.181165     1
+2          1.360675          0.799438  ...       1.304423     1
+3          0.102936         -0.380603  ...      -0.029931     1
+4         -0.926123         -0.380603  ...      -0.084396     1
+...             ...               ...  ...            ...   ...
+1594       0.445956          0.406091  ...      -1.280479     1
+1595      -0.068574          0.602764  ...      -0.309572     1
+1596      -0.640274          0.518476  ...      -0.084396     1
+1597      -0.240084         -1.841605  ...      -1.582109     1
+1598      -1.440653         -1.335874  ...      -0.931434     1
+
+[1519 rows x 12 columns]
+Index(['fixed acidity', 'volatile acidity', 'residual sugar',
+       'free sulfur dioxide', 'other sulfur dioxide', 'pH', 'sulphates',
+       'quality_bin', 'log other sulfur dioxide', 'log sulphates',
+       'log chlorides', 'bias'],
+      dtype='object')

@@ -27,7 +27,7 @@ def evaluate_acc(dataframe, train_and_predict, binary_feature):
         for j in range(0, len(partitions)):
             if j != i:
                 training_data = training_data.append(partitions[j], ignore_index=True)
-        accuracies.append(train_and_predict(training_data, holdout, binary_feature)[2])
+        accuracies.append(train_and_predict(training_data, holdout, binary_feature))
 
     # Average out and return the accuracies for the given features
     return sum(accuracies)/len(accuracies)
@@ -68,7 +68,8 @@ def backwards_elimination(dataset, binary_feature, accuracy_function, min_improv
     included_features = list(dataset.columns)
     candidates = list(dataset.columns)
     candidates.remove(binary_feature)
-    candidates.remove('bias')
+    if 'bias' in candidates:
+        candidates.remove('bias')
     print('Evaluating full feature set...')
     best_accuracy = evaluate_acc(dataset, accuracy_function, binary_feature)
     best_features = list(included_features)
@@ -102,7 +103,8 @@ def backwards_elimination(dataset, binary_feature, accuracy_function, min_improv
 def forward_search(dataset, binary_feature, accuracy_function, min_improvement=0):
     features = list(dataset.columns)
     features.remove(binary_feature)
-    features.remove('bias')
+    if 'bias' in features:
+        features.remove('bias')
     best_accuracy = 0
     best_features = []
     included_features = [binary_feature, 'bias']

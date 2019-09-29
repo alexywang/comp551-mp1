@@ -12,7 +12,7 @@ BIN_FEATURE = 'quality_bin'
 
 
 # perform all data manipulation and feature engineering
-def process_data(dataframe, categorical_data="quality_bin", normalize=True):
+def process_data(dataframe, categorical_data="quality_bin", expand=True):
     # adjust total sulfur dioxide to remaining sulfur dioxide to be fully independent
       # for i in dataframe.index:
     #     dataframe.at[i, 'total sulfur dioxide'] -= dataframe.at[i, 'free sulfur dioxide']
@@ -23,14 +23,13 @@ def process_data(dataframe, categorical_data="quality_bin", normalize=True):
     # Taking the log of total sulfur dioxide due to massive variance
     dataframe['log total sulfur dioxide'] = dataframe['total sulfur dioxide'].apply(lambda x: math.log(x, 10))
     # Squaring fixed acidity due to non linear relationship
-    dataframe['log residual sugar'] = dataframe['residual sugar'].apply(lambda x: math.log(x, 10))
-    dataframe['log sulphates'] = dataframe['sulphates'].apply(lambda x: math.log(x,10))
-    dataframe['log chlorides'] = dataframe['chlorides'].apply(lambda x: math.log(x,10))
-    dataframe['log free sulfur dioxide'] = dataframe['free sulfur dioxide'].apply(lambda x: math.log(x, 10))
+    dataframe['residual sugar'] = dataframe['residual sugar'].apply(lambda x: math.log(x, 10))
+    dataframe['sulphates'] = dataframe['sulphates'].apply(lambda x: math.log(x,10))
+    dataframe['chlorides'] = dataframe['chlorides'].apply(lambda x: math.log(x,10))
+    dataframe['free sulfur dioxide'] = dataframe['free sulfur dioxide'].apply(lambda x: math.log(x, 10))
 
     dataframe = validation.variance_threshold(dataframe, BIN_FEATURE)
-    if normalize:
-        processed = manip.normalize(dataframe, categorical_data)
+    dataframe = manip.normalize(dataframe, categorical_data)
     dataframe = manip.add_bias(dataframe)
 
     return dataframe
@@ -87,5 +86,4 @@ print(final_dataset)
 
 print(final_dataset.columns)
 
-print('Expansion:', validation.evaluate_acc(final_dataset, train_and_predict, BIN_FEATURE))
 print('FINAL MODEL:', model.fit(final_dataset, BIN_FEATURE))

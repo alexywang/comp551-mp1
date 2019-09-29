@@ -14,7 +14,30 @@ def _lgc(x):
     return 1.0 / (1.0 + np.exp(-1.0 * x))  # logistic function
 
 
-def _gradient_ascent(data, fitness_gradient, learning_rate, tolerance, binary_feature="quality_bin", opt_print=False):
+def test_learning_rates_tolerances(training_data, binary_feature):
+    learning_rates = [0.1, 0.05, 0.02, 0.01, 0.05, 0.02, 0.01, 0.005, 0.002, 0.001, 0.0005, 0.0002,
+                      0.0001, 0.00005, 0.00002, 0.00001]
+
+    tolerances = [0.1, 0.01, 0.005, 0.002, 0.001, 0.0005, 0.0002, 0.0001]
+
+    repeats = 5
+
+    print("learning_rate, tolerance, steps")
+
+    for tolerance in tolerances:
+        for learning_rate in learning_rates:
+            steps = 0
+
+            for i in range(repeats):
+                steps += _gradient_ascent(training_data, log_likelihood_gradient, learning_rate, tolerance,
+                                 binary_feature=binary_feature, nb_steps_only=True)
+            print(learning_rate, ",", tolerance, ",", (steps + 0.0) / repeats)
+
+
+
+def _gradient_ascent(data, fitness_gradient, learning_rate = LEARNING_RATE,
+                     tolerance = TOLERANCE, binary_feature="quality_bin", opt_print=False,
+                     nb_steps_only = False, step_limit = 5000):
     """
     Performs a gradient ascent on the given function.
 
@@ -29,7 +52,9 @@ def _gradient_ascent(data, fitness_gradient, learning_rate, tolerance, binary_fe
     weights = weights.drop(binary_feature, axis='columns')
     weights_static = False
 
-    while not weights_static:
+    steps = 0
+
+    while not weights_static and steps < step_limit :
         gradient = fitness_gradient(data, weights, binary_feature)
 
         adjustment_norm = np.linalg.norm(gradient) * learning_rate
@@ -42,7 +67,14 @@ def _gradient_ascent(data, fitness_gradient, learning_rate, tolerance, binary_fe
         else:
             weights = weights + learning_rate * gradient
 
-    return weights
+        steps += 1
+
+
+    if not nb_steps_only:
+        return weights
+
+    else:
+        return steps
 
 
 def fit(training_data, binary_feature, opt_print=False):
@@ -52,7 +84,8 @@ def fit(training_data, binary_feature, opt_print=False):
     :param training_data: The data to be trained over. Expected to be in PANDAS Dataframe form.
     :return: A tuple containg the weights of the model, followed by the final value of the fitness function.
     """
-    weights = _gradient_ascent(training_data, log_likelihood_gradient, LEARNING_RATE, TOLERANCE, binary_feature=binary_feature, opt_print=opt_print)
+    weights = _gradient_ascent(training_data, log_likelihood_gradient, LEARNING_RATE, TOLERANCE,
+                               binary_feature=binary_feature, opt_print=opt_print)
     fitness = log_likelihood(training_data, weights, binary_feature)
     return weights, fitness
 

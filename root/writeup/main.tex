@@ -6,6 +6,7 @@
     \usepackage[left=2.5cm, right = 2.5cm, top=3.5cm, bottom=3cm]{geometry}
     \usepackage{amsmath, amssymb, amsthm}
     \usepackage{calc}
+    \usepackage{pgfplots}
 
     \usepackage{listings}
     \usepackage{color}
@@ -49,8 +50,8 @@
 
     %first page info
     \author{David Carrier -- 260739866 \\
-        Alex Wang -- xxxxxxxxx \\
-        Elie Climan -- xxxxxxxxx}
+        Alex Wang -- 260684151 \\
+        Elie Climan -- 260686400}
     \date{September 28, 2019}
     \title{COMP 551 -- Applied Machine Learning \\
     Mini-Project 1}
@@ -63,17 +64,116 @@
     \noindent\rule{0.3\textwidth}{1pt}   
     \section*{Abstract}
 
+        The object of this project was to investigate the classification accuracy of logistic regression and linear discriminant analysis (LDA) on two low-dimensional datasets. The first dataset was about the taste classification of Vinho Verde wines according to their chemical properties; the second concerned the risk of recurrence of breast cancer according to various measurements of a tumor.
+        
+        %%Insert findings here
 
     \newpage
     \section{Introduction}
     
     \section{Datasets}
     
+    \subsection{Wine Set}
+    
+    The wine dataset has 12 features, including a qualitative \texttt{quality} feature on a 1-10 scale.The set has 1598 points, and there are no missing values or otherwise malformed features.
+    
+    Since we are trying to classify the wines as being either \texttt{good} or \texttt{bad}, we started by creating a new binary feature \texttt{quality\_bin} taking value 0 if the wine's \texttt{quality} rating is 5 or below, and 1 if its rating is 6 or above.
+    
+    When we run aggregate statistics for any given feature, we see that several features have a heavy excess kurtosis (\texttt{residual sugar} has 28.5, \texttt{chlorides} has 41.6 and \texttt{sulphates} has 11.7). This indicates a possibly heavy presence of outliers in the dataset. We thus remove all datapoints having some feature more than 4 standard deviations away from the mean. This represents 79 points or $4.9\%$ of the dataset.
+    
+    The resulting dataset has no features whose excess kurtosis is above 6.4.
+    
+    In order to ensure convergence for the gradient descent to be performed thereafter, the features were also normalized by the z-score:
+    
+    $$y_i^\prime = \frac{y_i - \bar{y}}{s_y}$$
+    
+    where $\bar{y}$ is the data mean and $s_y$ is the estimated standard deviation for the feature $y$. Since this is a linear transformation, the resulting features are entirely correlated with the old ones, so the resulting model should not be affected; but normalizing the features ensures that all weights remain relatively close to 0 and that the learning rate is adequate for all features.
+    
+    \subsection{Breast Cancer Set}
+    
+    
+    
     \section{Results}
+    
+    \subsection{Gradient Descent}
+    
+    \begin{figure}[h]
+        \centering
+        
+        \begin{tikzpicture}
+        \begin{loglogaxis}[
+        width = 0.4\textwidth,
+        title= {Gradient Descent Steps},
+        xlabel={Learning Rate},
+        ylabel={Tolerance},
+        zlabel={Steps Required},
+        zmax = {5000},
+        view ={225}{50},
+        grid=major,
+        grid style={dotted},
+        colormap/jet,
+        mesh/ordering=x varies,
+        mesh/cols=8]
+        
+        \pgfplotstableread[ col sep = comma]{gradient_descent_testing.csv}\loadedtable
+        \addplot3[surf] table {\loadedtable};
+        \end{loglogaxis}
+        
+        \end{tikzpicture}\hfill\begin{tikzpicture}
+        
+        \begin{loglogaxis}[
+        width = 0.4\textwidth,
+        xlabel={Learning Rate},
+        ylabel={Tolerance},
+        zlabel={Steps Required},
+        xmin = 0.00005,
+        zmax = 700,
+        view ={225}{50},
+        grid=major,
+        grid style={dotted},
+        colormap/jet,
+        mesh/ordering=x varies,
+        mesh/cols=8]
+        
+        \pgfplotstableread[ col sep = comma]{gradient_descent_testing.csv}\loadedtable
+        \addplot3[surf] table {\loadedtable};
+        \end{loglogaxis}
+        \end{tikzpicture}
+        
+        \caption{The number of steps required for the gradient descent process to attain the stated tolerance, when trained on the entire set of features for the data set (no square or product features). Note that no convergence was attained when the learning rate was above 0.002 as the number of steps was bounded to 5000.}
+    \end{figure}
+    
+    \subsection{LDA}
+    
     
     \section{Discussion and Conclusion}
     
+    \newpage
     \section*{Statement of Contributions}
+    
+    \begin{itemize}
+        \item David Carrier:
+        \begin{itemize}
+            \item Data cleanup for the wine set
+            \item General methods for data cleanup and creation of product / square features
+            \item Implementation of gradient descent
+            \item Report typesetting
+        \end{itemize}
+        
+        \item Elie Climan:
+        \begin{itemize}
+            \item Data cleanup for the breast cancer set
+            \item Implementation of LDA
+            
+        \end{itemize}
+        
+        \item Alex Wang:
+        \begin{itemize}
+            \item Implementation of $k$-fold verification algorithm
+            \item Implementation of feature selection algorithm
+            \item Obtaining and organizing results (incl. optimal feature selection)
+        \end{itemize}
+    \end{itemize}
     
 
 \end{document}
